@@ -11,8 +11,20 @@ namespace MyFirstGitHubClassRoomConsoleApp60
 
         public string Name { get; set; }
         public int Age { get; set; }
-        public string Description { get; set; }
+        public string Adress { get; set; }
 
+        public demo(string name, int age, string adress)
+        {
+            Name = name;
+            Age = age;
+            Adress = adress;
+
+        }
+
+        public override string ToString()
+        {
+            return $"Navn: {Name} | Alder: {Age} | Adresse: {Adress}"; 
+        }
 
     }
 }
